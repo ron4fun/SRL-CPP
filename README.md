@@ -128,6 +128,11 @@ int main()
 	cout << match_1 == match_3 << ": " << match_1 << endl; 
 	cout << match_2 == match_4 << ": " << match_2 << endl; 
 
+	query = SRL("begin with capture (letter twice) as \"basename\", must end");
+	matches = query.getMatches("aa");
+
+	cout << matches[0]["basename"] << endl;
+
     return 0;
 }
 ```
