@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Exceptions">
+      <UniqueIdentifier>{88fb3055-862f-4a8c-9f2c-3dfdb16eb71f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Builder">
+      <UniqueIdentifier>{079f1936-2b4a-4bcb-8f5e-71b714757ce0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Language">
+      <UniqueIdentifier>{895e09da-3c24-436a-b0b2-9b724e77eedd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Language\Helpers">
+      <UniqueIdentifier>{a68c84dc-a1f6-4067-9ed3-9105ae15b503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Language\Methods">
+      <UniqueIdentifier>{5b561be6-eedf-4000-87c4-9d54e054cd54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tests">
+      <UniqueIdentifier>{a7c574bf-a683-4234-bbae-81d8041b6ca3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exceptions\BuilderException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Exceptions\ImplementationException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Exceptions\InterpreterException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Exceptions\PregException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Exceptions\SRLException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Exceptions\SyntaxException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exceptions\NotImplementedException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="SRL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\EitherOf.h">
+      <Filter>Header Files\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\NegativeLookahead.h">
+      <Filter>Header Files\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\PositiveLookahead.h">
+      <Filter>Header Files\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\Optional.h">
+      <Filter>Header Files\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\Helpers\Literally.h">
+      <Filter>Header Files\Language\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\Helpers\Cache.h">
+      <Filter>Header Files\Language\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\Methods\Method.h">
+      <Filter>Header Files\Language\Methods</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\Methods\AndMethod.h">
+      <Filter>Header Files\Language\Methods</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\Methods\AsMethod.h">
+      <Filter>Header Files\Language\Methods</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\Methods\SimpleMethod.h">
+      <Filter>Header Files\Language\Methods</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\Methods\ToMethod.h">
+      <Filter>Header Files\Language\Methods</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\Methods\TimeMethod.h">
+      <Filter>Header Files\Language\Methods</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\Capture.h">
+      <Filter>Header Files\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\NonCapture.h">
+      <Filter>Header Files\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\Helpers\buildQuery.h">
+      <Filter>Header Files\Language\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\Helpers\methodMatch.h">
+      <Filter>Header Files\Language\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\Helpers\parseParentheses.h">
+      <Filter>Header Files\Language\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\Interpreter.h">
+      <Filter>Header Files\Language</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\SRLTypes.h">
+      <Filter>Header Files\Language</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\ParseParenthesesTests.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Issue_11_Tests.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Language\Helpers\SubProcess.h">
+      <Filter>Header Files\Language\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\BuilderTests.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\ExceptionsTests.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\InterpreterTests.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\RuleTests.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SRL App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Language\SRLTypes.cpp">
+      <Filter>Header Files\Language</Filter>
+    </ClCompile>
+    <ClCompile Include="Language\Methods\Method.cpp">
+      <Filter>Header Files\Language\Methods</Filter>
+    </ClCompile>
+    <ClCompile Include="Language\Helpers\SubProcess.cpp">
+      <Filter>Header Files\Language\Helpers</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
