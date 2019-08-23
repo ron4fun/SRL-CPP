@@ -1,5 +1,5 @@
 # SRL-CPP [![License](http://img.shields.io/badge/license-MIT-green.svg)](https://github.com/ron4fun/SRL-CPP/blob/master/LICENSE)
-SRL-CPP is a Simple Regex Language builder library written C++11 that provides an easy to use interface for constructing both simple and complex regex expressions.
+SRL-CPP is a Simple Regex Language builder library written in C++11 that provides an easy to use interface for constructing both simple and complex regex expressions.
 
 It also supports **capture names**.
 
