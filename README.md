@@ -87,43 +87,43 @@ The SRL function accepts a Simple Regex Language string as input, and return the
 
 int main()
 {
-	Builder query = SRL().literally("colo").optional((string)"u").literally("r").anyOf(
-		[](Builder& builder) {
-		builder.literally(":"). and (
-			[](Builder& builder) {
-			builder.literally(" is");
-		});
-	}).whitespace().capture(
-		[](Builder& builder) {
-		builder.letter().onceOrMore();
-	}).literally(".");
+    Builder query = SRL().literally("colo").optional((string)"u").literally("r").anyOf(
+	[](Builder& builder) {
+	builder.literally(":").and(
+	[](Builder& builder) {
+	    builder.literally(" is");
+	});
+    }).whitespace().capture(
+	[](Builder& builder) {
+	    builder.letter().onceOrMore();
+    }).literally(".");
 		
     auto matches = query.getMatches("my favorite colour is green. And my favorite color: yellow.");
 	
     bool match_1 = matches[0]["0"];
-	bool match_2 = matches[1]["0"];  
+    bool match_2 = matches[1]["0"];  
   
-	query = SRL("literally \"color:\", whitespace, capture (letter once or more), literally \".\", all");
+    query = SRL("literally \"color:\", whitespace, capture (letter once or more), literally \".\", all");
 
-	matches = query.getMatches("my favorite colour is green. And my favorite color: yellow.");
+    matches = query.getMatches("my favorite colour is green. And my favorite color: yellow.");
 	
     bool match_3 = matches[0]["0"];
-	bool match_4 = matches[1]["0"];
+    bool match_4 = matches[1]["0"];
 
-	cout << match_1 == match_3 << ": " << match_1 << endl; 
-	cout << match_2 == match_4 << ": " << match_2 << endl; 
+    cout << match_1 == match_3 << ": " << match_1 << endl; 
+    cout << match_2 == match_4 << ": " << match_2 << endl; 
 
-	query = SRL("begin with capture (letter twice) as \"basename\", must end");
-	matches = query.getMatches("aa");
+    query = SRL("begin with capture (letter twice) as \"basename\", must end");
+    matches = query.getMatches("aa");
 
-	cout << matches[0]["basename"] << endl;
+    cout << matches[0]["basename"] << endl;
 
-	// Quite a complex regex expression
-	query = SRL("begin with literally \"http\", optional \"s\", literally \"://\", optional \"www.\", anything once or more, literally \".com\", must end");
+    // Quite a complex regex expression
+    query = SRL("begin with literally \"http\", optional \"s\", literally \"://\", optional \"www.\", anything once or more, literally \".com\", must end");
 	
-	cout << query.isMatching("http://www.google.com") << endl;
-	cout << query.isMatching("https://google.com") << endl;
-	cout << query.isMatching("htt://google.com") << endl;
+    cout << query.isMatching("http://www.google.com") << endl;
+    cout << query.isMatching("https://google.com") << endl;
+    cout << query.isMatching("htt://google.com") << endl;
 
     return 0;
 }
