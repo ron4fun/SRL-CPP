@@ -33,7 +33,7 @@ Builder& SubProcess::callBuildQuery(MixedArray &query, Builder &builder)
 		if (method.type() != vMethod) {
 			// At this point, there should only be methods left, since all parameters are already taken care of.
 			// If that's not the case, something didn't work out.
-			throw SyntaxException("Unexpected statement: ${ method }");
+			throw SyntaxException("Unexpected statement: " + method.toString());
 		} // end if
 
 		MixedArray parameters;
