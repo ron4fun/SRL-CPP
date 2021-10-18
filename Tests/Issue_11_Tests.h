@@ -34,6 +34,7 @@ BOOST_AUTO_TEST_CASE(ComplicatedCase)
 {
 	Builder query = SRL("begin with, digit, exactly 5 times, ( literally '-', digit, exactly 4 times ), optional, must end");
 	BOOST_CHECK(query.isMatching("12345-1234"));
+	BOOST_CHECK(query.isMatching("12345"));
 }
 
 BOOST_AUTO_TEST_SUITE_END()
